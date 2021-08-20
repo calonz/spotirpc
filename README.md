@@ -117,5 +117,5 @@ Podcast information is random, has nothing to do with reality*
 ```
 
 ```
-Thanks to Spotify Developer Tools and Discord Developer Portal for making this tool possible <3 
+Thanks to Spotify Developer Tools and Discord Developer Portal for making this tool possible ❤️
 ```
