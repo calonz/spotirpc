@@ -1,6 +1,8 @@
 ```
-Spotify PodCast power-up for Discord RPC Client. 
+SPOTIFY PODCAST POWER-UP FOR DISCORD RPC CLIENT
+```
 
+```
 This tool will show you what music you're listening to in your Discord bio, Album - Podcast - Artist data.
 adds them all to your situation. The languages used are Node.JS (JavaScript) and C#.
 This tool is completely legal and in no way violates Spotify's rules, privacy policy.
