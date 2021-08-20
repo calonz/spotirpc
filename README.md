@@ -100,8 +100,6 @@ It is the location where the data obtained after the WebAPI is triggered is stor
 changing the program properly
 may cause it to not work. The chace file should be as follows.
 
-
-
 {
     "audioPodcastName": "B16 - Bize Tavsiye Edebileceğiniz Filimler Var mı?",
     "mainPodcastName": "Bir Elit Bilim İnsanı: Prof. Dr. Celal Şengör",
@@ -110,6 +108,8 @@ may cause it to not work. The chace file should be as follows.
     "audioLatestTime": 1.05,
     "webapiSyntaxVersion": 1
 }
+
+Podcast information is random, has nothing to do with reality*
 ```
 
 ```
