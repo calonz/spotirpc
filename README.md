@@ -19,8 +19,8 @@ Uyarı! : Bu madde teknik detayları içermektedir. Eğer pek bilginiz yoksa aya
 
 Uygulamayı kurduğunuz dizin üzerinden ./spotipod/config/app.json dosyası üzerinden yola çıkıcak olursak, verilerimizi ve ne işe yaradıklarını detaylıca inceleyelim isterseniz.
 
-1. Taslak
-2. 
+**1. Taslak**
+ 
 ```
 {
     "webapiLocation": "/webapi",
@@ -29,8 +29,41 @@ Uygulamayı kurduğunuz dizin üzerinden ./spotipod/config/app.json dosyası üz
 }
 ```
 
-2. STRING : webapiLocation Nedir?
+**2. STRING : webapiLocation Nedir?**
 
 Programın Spotify uygulaması üzerinden veri alabilmesi için kullandığı Spotify Developer Tools sadece JavaScript dili ile anlaşabildiği için, ana uygulama (C#) diliyle programlandığından dolayı uyumsuzluk oluşacaktır. Bu yüzden ana uygulama (C#) WebAPI den veri alabilmek için JavaScript üzerinden (cmd snipplet ile veri çekebilme olasılığı olduğundan dolayı NodeJS tercih edildi) veri oluşturacak ve bunu bir json dosyasına yazacaktır. ana uygulama (C#) bu json dosyasını okuyarak RPC'yi aktif edebilir. Bu veri de WebAPI'nin konumunu belli etmekle görevlidir.
+
+Örneğin : 
+```
+{
+    "webapiLocation": "C:\\Program Files\\macesdev\\spotipod\\webapi",
+
+}
+```
+
+**3. STRING : webapiRunCommand Nedir?**
+
+wenapiLocation ana uygulamanın (C#) JavaScript (NodeJS)'i tetikleyerek veri çekmesine sebep olur. Komut geliştirici (macesdev) otomatik olarak kurulum esnasında ayarlar. Eğer WebAPI'nin çalışmadığını düşünüyorsanız bu komutu WebAPI üzerinden çalıştırarak veri elde edilip edilmediğini kararlaştırabilirsiniz
+
+Örneğin : 
+```
+{
+    "webapiRunCommand": "node webapi.js"
+
+}
+```
+
+Burada webapiLocation klasörü içerisindeki webapi.js dosyasını tetiklereyek veri elde eder, C# ise bunu okuyarak RPC'yi çalıştırmasına yardımcı olur.
+
+**4. STRING : webapiValueExractLocation Nedir?**
+
+WebAPI'nin tetiklendikten sonraki elde edilen verilerin saklandığı (depo edildiği) konumdur. Chace dosyası aşağıdaki şekilde olmalıdır.
+
+```
+{
+    "webapiRunCommand": "node webapi.js"
+
+}
+```
 
 **Bu aracı mümkün kılan _Spotify Developer Tools_ ve _Discord Developer Portal_'a teşşekürler <3**
