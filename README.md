@@ -36,7 +36,7 @@ the project/Issues tab.
 ```
 Requirements (Software Required)
 
-.NET Framework 4.2.7 (https://dotnet.microsoft.com/download/dotnet-framework/net472 - minimum version : 4.2.7),
+.NET Framew. 4.2.7 (https://dotnet.microsoft.com/download/dotnet-framework/net472 - minimum version : 4.2.7),
 Node.JS (https://nodejs.org/en/download/current/ - minimum version : 16.7.0).
 
 If you do the installations
@@ -46,10 +46,11 @@ If you are living, you can create a request from the project/Issues tab.
 ```
 Config (JSON) Detailing and WebAPI Configuration
 
-Warning! : This article contains technical details. If you do not have much knowledge, it is recommended not to play with the settings.
+Warning! : This article contains technical details. If you do not have much knowledge, it is recommended not 
+to play with the settings.
 
-If we go through the ./spotipod/config/app.json file through the directory where you installed the application, we can save our data.
-And let's take a closer look at what they do. 
+If we go through the ./spotipod/config/app.json file through the directory where you installed the 
+application, we can save our data. And let's take a closer look at what they do. 
 ```
 
 ```json
