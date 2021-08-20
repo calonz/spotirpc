@@ -11,6 +11,15 @@ bilgilerini ve podcast detaylarını alarak Discord'un Developer Tools aracılı
 ```
 
 ```
+Bu güçlendirmeyi mümkün kılan kişi : @MuhammedMGS (evet, rica ederim <3)
+
+macesdev rolü : Kurucu
+Instagram : @muhammedmgs
+Twitter : @muhammedmgs
+Discord : MuhammedMGS#1881
+```
+
+```
 Kullanımı
 
 Programı indirdikten sonra spotipod_setup.exe (Windows için geçerlidir*) dosyası ile kurulumunuzu 
