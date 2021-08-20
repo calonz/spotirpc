@@ -82,9 +82,9 @@ E.g :
 ```json
 STRING : What is webapiRunCommand?
 
-wenapiLocation causes the main application (C#) to pull data by triggering JavaScript (NodeJS). Command developer
-(macesdev) automatically sets it during installation. If you think WebAPI is not working, use this command as WebAPI.
-You can decide whether data is obtained by running
+wenapiLocation causes the main application (C#) to pull data by triggering JavaScript (NodeJS). 
+Command developer (macesdev) automatically sets it during installation. If you think WebAPI
+is not working, use this command as WebAPI. You can decide whether data is obtained by running
 
 E.g :
 
