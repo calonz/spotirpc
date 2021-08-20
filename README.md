@@ -37,7 +37,6 @@ Programın Spotify uygulaması üzerinden veri alabilmesi için kullandığı Sp
 ```
 {
     "webapiLocation": "C:\\Program Files\\macesdev\\spotipod\\webapi",
-
 }
 ```
 
@@ -49,7 +48,6 @@ wenapiLocation ana uygulamanın (C#) JavaScript (NodeJS)'i tetikleyerek veri çe
 ```
 {
     "webapiRunCommand": "node webapi.js"
-
 }
 ```
 
@@ -61,9 +59,14 @@ WebAPI'nin tetiklendikten sonraki elde edilen verilerin saklandığı (depo edil
 
 ```
 {
-    "webapiRunCommand": "node webapi.js"
-
+    "audioPodcastName": "B16 - Bize Tavsiye Edebileceğiniz Filimler Var mı?",
+    "mainPodcastName": "Bir Elit Bilim İnsanı: Prof. Dr. Celal Şengör",
+    "podcastBannerURL": "https://i.scdn.co/image/465c4b24a397642055863081c83719c4992d006a",
+    "audioPodcastTime": 4.02,
+    "audioLatestTime": 1.05
 }
 ```
+
+.. yazılacak
 
 **Bu aracı mümkün kılan _Spotify Developer Tools_ ve _Discord Developer Portal_'a teşşekürler <3**
