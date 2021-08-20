@@ -22,12 +22,13 @@ Discord : MuhammedMGS#1881
 ```
 Use of
 
-After downloading the program, you can start your installation with the spotipod_setup.exe (valid for Windows*) file.
-you can do it easily. Open your Discord and Spotify apps, Discord > User Settings > Connections
-After syncing your Spotify account with your Discord account from the tab, "Display Spotify status on profile"
-Activate "View" option. Then click RPC > Run from the Windows Tray
-you can activate. Now the application will transfer the music you listen to instantly to Spotify. If you have a problem
-you can create a request from the project/Issues tab.
+After downloading the program, you can start your installation with the spotipod_setup.exe 
+(valid for Windows*) file. you can do it easily. Open your Discord and Spotify apps, 
+Discord > User Settings > Connections, After syncing your Spotify account with your
+Discord account from the tab, "Display Spotify status on profile" Activate "View" option.
+Then click RPC > Run from the Windows Tray you can activate. Now the application will transfer
+the music you listen to instantly to Spotify. If you have a problem you can create a request from
+the project/Issues tab.
 ```
 
 ```
