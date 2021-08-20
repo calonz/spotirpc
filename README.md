@@ -1,2 +1,36 @@
+# Discord RPC Client için Spotify eklentisi.
 
-Bu aracı mümkün kılan Spotify Devloper Tools'a teşşekürler <3
+Bu araç Discord biyografinizde hangi müziği dinlediğinizi, **Albüm** - **Podcast** - **Sanatçı** verilerinin hepsini durumunuza ekler. Kullanılan diller **Node.JS (JavaScript)** ve **C#** olarak belirtilmektedir.
+
+
+Bu araç **tamamen legal** olup, herhangi bir şekilde Spotify'ın **kurallarına**, **gizlilik sözleşmesine** ve **veri kullanım bilgilerine** **zarar** veya **kayıp verdirmemektedir**. Spotify'ın geliştiriciler için yayınlamış olduğu **WebAPI** üzerinden bulunduğu cihaz (Bilgisayar) üzerinden anlık olarak çalınan müzik bilgilerini ve podcast detaylarını alarak** Discord'un Developer Tools** aracılığı ile bulunduğu cihaz üzerinden **Rich Presence verisi olarak sunucuya iletmektedir**.
+
+# 2 - Kullanımı
+
+Programı indirdikten sonra **spotipod_setup.exe** (Windows için geçerlidir*) dosyası ile kurulumunuzu rahatlıkla yapabilirsiniz. **Discord** ve **Spotify** uygulamalarınızı açın, **Discord > Kullanıcı Ayarları > Bağlantılar** sekmesinden **Spotify** hesabınızı **Discord** hesabınız ile **eşitledikten** sonra **"Spotify durumumu profilimde görüntüle"** seçeneğini aktif hale getirin. Ardından Windows Tepsisi üzerinden **RPC > Çalıştır** seçeneğine tıklayarak aktif edebilirisiniz. Artık uygulama anlık olarak dinlediğiniz müziği Spotify'a aktaracaktır. Eğer bir sorun ile karşılaşırsanız proje/Issues sekmesinden talep oluşturabilirsiniz.
+
+# 3 - Gereksinimler
+
+Program .NET Framework 4.2.7 (https://dotnet.microsoft.com/download/dotnet-framework/net472 - minumum sürüm : 4.2.7), Node.JS (https://nodejs.org/en/download/current/ - minumum sürüm : 16.7.0). Eğer kurulumları yapmanız halinde sorun yaşıyorsanız proje/Issues sekmesinden talep oluşturabilirsiniz.
+
+# 4 - Config (JSON) detaylandırması ve WebAPI belirliliği
+
+Uyarı! : Bu madde teknik detayları içermektedir. Eğer pek bilginiz yoksa ayarlarla oynamamanız tavsiye edilir.
+
+Uygulamayı kurduğunuz dizin üzerinden ./spotipod/config/app.json dosyası üzerinden yola çıkıcak olursak, verilerimizi ve ne işe yaradıklarını detaylıca inceleyelim isterseniz.
+
+1. Taslak
+2. 
+```
+{
+    "webapiLocation": "/webapi",
+    "webapiRunCommand": "node webapi.js",
+    "webapiValueExractLocation": "/chace.json"
+}
+```
+
+2. STRING : webapiLocation Nedir?
+
+Programın Spotify uygulaması üzerinden veri alabilmesi için kullandığı Spotify Developer Tools sadece JavaScript dili ile anlaşabildiği için, ana uygulama (C#) diliyle programlandığından dolayı uyumsuzluk oluşacaktır. Bu yüzden ana uygulama (C#) WebAPI den veri alabilmek için JavaScript üzerinden (cmd snipplet ile veri çekebilme olasılığı olduğundan dolayı NodeJS tercih edildi) veri oluşturacak ve bunu bir json dosyasına yazacaktır. ana uygulama (C#) bu json dosyasını okuyarak RPC'yi aktif edebilir. Bu veri de WebAPI'nin konumunu belli etmekle görevlidir.
+
+**Bu aracı mümkün kılan _Spotify Developer Tools_ ve _Discord Developer Portal_'a teşşekürler <3**
