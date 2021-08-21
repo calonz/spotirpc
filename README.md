@@ -22,6 +22,17 @@ Discord : MuhammedMGS#1881
 ```
 
 ```
+Spotify WebAPI : Data usage terms
+
+Spotipod application with your Spotify account so that the application can detect the music you are listening to instantly
+There must be a vineyard on the plot. Therefore, you can easily integrate your account into the application with 
+Spotify's oauth method. you can. macesdev (the company that published the app*) does not store this data on their data
+servers in any way. and does not keep important data of the accessed account (Username, password - editing albums, 
+deleting etc.*) does not cause any damage to the data. If you don't feel safe, try the open source code of the project.
+You can easily access it from the top area :)
+```
+
+```
 Use of
 
 After downloading the program, you can start your installation with the spotipod_setup.exe 
